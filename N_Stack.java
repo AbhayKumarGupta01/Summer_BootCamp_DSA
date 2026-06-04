@@ -9,6 +9,7 @@ class N_Stack{
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         //int arr[] = new arr[n];
+        @SuppressWarnings("unchecked")
         Stack<Integer>[] stack  = new Stack[n];
         for(int i=0; i<n; i++){
             stack[i] = new Stack<>();
@@ -32,6 +33,7 @@ class N_Stack{
         stack[5].push(102);
         stack[5].push(103);
 
+        @SuppressWarnings("unchecked")
         LinkedList<Integer>[] arr = new LinkedList[n];
         for(int i=0; i<n; i++){
             arr[i] = new LinkedList<>();
@@ -42,6 +44,11 @@ class N_Stack{
         for(int i=0; i<n; i++){
             System.out.println("arr[" + i + "] = " +arr[i]);
         }
+        for(int i = 0; i < n; i++) {
+         for(int x : arr[i]) {
+         System.out.print(x + " ");
+    }
+}
     }
 
 }
